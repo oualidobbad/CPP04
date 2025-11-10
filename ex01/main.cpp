@@ -1,28 +1,19 @@
-#include "Cat.hpp"
-#include "Dog.hpp"
-#include "WrongCat.hpp"
+#include "Header.hpp"
 
 int main()
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	const int N = 5;
+	Animal **arr = new Animal*[N];
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
-
-	std::cout << "=========================================Wrong Classes=================================" <<std::endl;
-	const WrongAnimal* k = new WrongCat();
-	std::cout << k->getType() << " " << std::endl;
-	k->makeSound();
-	delete k;
-	std::cout << "=======================================================================================" <<std::endl;
-
-	delete meta;
-	delete i;
-	delete j;
+	for (int i = 0; i < N; i++)
+	{
+		if (i < N/2)
+			arr[i] = new Dog();
+		else
+			arr[i] = new Cat();
+	}
+	for (int i = 0; i < N; i++)
+		delete arr[i];
+	delete []arr;
 	return 0;
 }
