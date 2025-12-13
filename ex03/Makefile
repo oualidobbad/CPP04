@@ -1,10 +1,10 @@
-NAME = ex00
-SRC = Animal.cpp  Cat.cpp  Dog.cpp  main.cpp  WrongAnimal.cpp  WrongCat.cpp
+NAME = materia
+SRC = AMateria.cpp  Character.cpp  Cure.cpp  Ice.cpp  main.cpp  MateriaSource.cpp
 OBJ = $(SRC:.cpp=.o)
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-all: $(NAME)
+all: $(NAME) clean
 
 $(NAME): $(OBJ)
 	$(CPP) $(CPPFLAGS) -o $(NAME) $(OBJ)

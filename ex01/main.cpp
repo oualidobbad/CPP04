@@ -12,8 +12,10 @@ int main()
 		else
 			arr[i] = new Cat();
 	}
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < N; i++){
+		arr[i]->makeSound();
 		delete arr[i];
+	}
 	delete []arr;
 	return 0;
 }
