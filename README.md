@@ -1,22 +1,12 @@
-# CPP04
+    # CPP04
 
-## Description
-C++ module on subtype polymorphism and abstract classes.
+    C++ Module 04: subtype polymorphism, abstract classes, and deep copies (Animal/Cat/Dog, Brain).
 
-## Features
-- Virtual methods, deep copies, and interface usage.
+    ## Topics
+    - Virtual destructors/methods, interfaces, deep vs shallow copy of owned resources.
 
-## Technologies Used
-- C++98, Makefile.
+    ## Build & Run
+    - `make`; run the examples to see polymorphic behavior and copy semantics.
 
-## Installation
-- Run `make` in the module directory.
-
-## Usage
-- Execute the compiled examples to see polymorphic behavior.
-
-## Example
-- Instantiate animals and observe virtual method outputs.
-
-## Author
-- Oualid Obbad (@oualidobbad)
+    ## Author
+    Oualid Obbad (@oualidobbad)
